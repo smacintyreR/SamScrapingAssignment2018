@@ -1,0 +1,34 @@
+Sam MacIntyre - Scraping Assignment - 6/11/2018
+
+Scraping motivation:
+
+I have implemented Scrapy to take details from 
+each bike for sale on Wiggle.com. 
+
+I chose this website as it relatively easy pagination structure and the html
+element structure was relatively constant across bikes.
+
+Starting at 4 different page locations speeds up the scraper and scrapy 
+handles parallel requests automatically. 
+
+A .csv of the bike details (Product,Price,Discount,Feature1,Feature2
+    Delivery Method,Colour) is contained in the main folder.
+
+To run the scraper, navigate to the top folder "SamScrape", then run:
+
+scrapy crawl wiggle -o Bikes.csv
+
+in the terminal (if saving to csv format)
+
+The 19 errors that appear are due to the fact that there a few hyperlinks
+in the list that don't lead to bikes, and the scraper fails to grab the 
+information - this is not an issue as these pages contain no useful information
+anyway. 
+
+The wiggle_spider.py file is inside the "SamScrape/spiders" 
+
+The main challenges I faced were around the slight inconsistency of the html
+elements for different products. 
+
+                          
+        
