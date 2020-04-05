@@ -5,7 +5,7 @@ Scraping motivation:
 I have implemented Scrapy to take details from 
 each bike for sale on Wiggle.com. 
 
-I chose this website as it relatively easy pagination structure and the html
+I chose this website as it has a relatively easy pagination structure and the html
 element structure was relatively constant across bikes.
 
 Starting at 4 different page locations speeds up the scraper and scrapy 
